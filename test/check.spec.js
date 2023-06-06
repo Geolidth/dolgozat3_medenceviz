@@ -1,3 +1,5 @@
+//Csajbók-Reményi László SZOFT-I-2-E 2023.06.06
+
 describe('Input tesztelés', () => {
     it('Szám1', () => {
         let actual = checkInput(30);    //A 30 jó adat
@@ -18,8 +20,4 @@ describe('Input tesztelés', () => {
         let actual = checkInput(-50);   //-50 hibás adat
         expect(actual).toBe(false);
     });
-
-    
-
-    
 });

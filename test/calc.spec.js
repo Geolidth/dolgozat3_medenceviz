@@ -1,3 +1,5 @@
+//Csajbók-Reményi László SZOFT-I-2-E 2023.06.06
+
 describe('Számítás tesztelése', () => {
     it('Normál bemenet1: m: 110 sz: 100 h: 100 t:1', () => {
         let actual = calcValue(110,100,100);

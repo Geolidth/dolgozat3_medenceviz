@@ -1,3 +1,5 @@
+//Csajbók-Reményi László SZOFT-I-2-E 2023.06.06
+
 const setvalue = document.querySelector('#value');
 const calcbutton= document.querySelector('#calcbutton');
 const height= document.querySelector('#height');
