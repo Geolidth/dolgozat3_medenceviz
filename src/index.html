@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <title>Document</title>
+</head>
+<body class="bg-info text-danger">
+    <div class="container">
+        <h1 class="text-center">Feladat 0364</h1>
+        <h5>Adott egy téglatest alakú medence. A medencét fel kell tölteni vízzel. Viszont nem tölthető a medence teljesen tele, 10 cm-nél körbe lefolyó található.
+
+            <br>Kérje be a medence teljes magasságát, szélességét és hosszát. Számoltassa ki hány köbméter víz kell bele, ha felülről 10 cm nem tölthető meg.
+            
+            <br>Ügyeljen arra, hogy a medence nem tölthető tele (10 cm elmarad), de bekérésnél a medence teljes magasságát kapjuk meg bemenő paraméterként.</h5>
+        <div class="element mt-5">
+            <p>A medence magassága</p>
+            <input type="number" id="height" class="form-control">
+        </div>
+        <div class="element">
+            <p>A medence szélessége</p>
+            <input type="number" id="weight" class="form-control">
+        </div>
+        <div class="element">
+            <p>A medence hossza</p>
+            <input type="number" id="lenght" class="form-control">
+        </div>
+        <button class="btn btn-secondary mt-3" id="calcbutton">Számolj</button>
+        <div class="element mt-3">
+            <p>A medencébe tölthető víz mennyisége</p>
+            <input type="number" id="value" class="form-control">
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.7.0.js"
+  integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+  crossorigin="anonymous"></script>
+</body>
+</html>
