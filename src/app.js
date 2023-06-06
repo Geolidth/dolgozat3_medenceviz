@@ -1,22 +1,48 @@
+const setvalue = document.querySelector('#value');
+const calcbutton= document.querySelector('#calcbutton');
+const height= document.querySelector('#height');
+const weight= document.querySelector('#weight');
+const lenght= document.querySelector('#lenght');
+
+window.addEventListener('load', () => {
+    init();
+});
+
+function init() {
+    if (calcbutton) {
+        calcbutton.addEventListener('click', () => {
+            setvalue.value=calcValue(Number(height.value),weight.value,lenght.value);
+            clearValues();
+        });
+    }
+};
 
 
-$(window).on('load',function(){
-    $('#calcbutton').on('click',function(){
-        calcValue();
-    });
-    
-})
-
-
-function calcValue(){
-    let height = Number($('#height').val());
-    let weight = Number($('#weight').val());
-    let lenght = Number($('#lenght').val());
+function calcValue(height,weight,lenght) {
+    if(checkInput(height) && checkInput(weight) && checkInput(lenght)&&height>=10){
     let correctHeight = height - 10;
-    let value = correctHeight*weight*lenght/1000000;
-    $('#value').val(value);
-    $('#height').val('');
-    $('#weight').val('');
-    $('#lenght').val('');
-    
+    let correctvalue = correctHeight * weight * lenght / 1000000;
+    return correctvalue;
+    }
+}
+
+function checkInput(input) {
+    let inputStr = String(input);
+    let inputNum = Number(input);
+    if (inputStr.match(/^[0-9.]+$/)) {
+        if (inputNum > 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    else {
+        return false;
+    }
+}
+
+function clearValues(){
+    height.value='';
+    weight.value='';
+    lenght.value='';
 }

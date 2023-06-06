@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jasmine-browser-runner serve",
     "start": "lite-server"
   },
   "keywords": [],
@@ -15,6 +15,9 @@
     "jquery": "^3.7.0"
   },
   "devDependencies": {
+    "jasmine-browser-runner": "^2.0.0",
+    "jasmine-core": "^5.0.0",
+    "jasmine-jquery": "^2.1.1",
     "lite-server": "^2.6.1"
   }
 }
